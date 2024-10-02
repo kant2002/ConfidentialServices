@@ -1,0 +1,16 @@
+﻿@page "{propertyId?}"
+@model RazorSample.Pages.DetailsModel
+@{
+}
+@if (Model.Property is not null)
+{
+    
+<div class="mb-3 row">
+    <label for="staticName" class="col-sm-2 col-form-label">Name</label>
+    <div class="col-sm-10">
+        <input id="staticName" class="form-control" type="text" placeholder="@Model.Property.Name" aria-label="Disabled input example" disabled>
+    </div>
+</div>
+
+
+}

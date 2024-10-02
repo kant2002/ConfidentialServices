@@ -1,0 +1,46 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="get" class="row g-3">
+    <div class="col-auto">
+        <label for="inputPassword2" class="visually-hidden">Password</label>
+        <select class="form-select" aria-label="Organizations" name="organizationId">
+            <option selected>Select organization here</option>
+            @foreach (var item in Model.Organizations)
+            {
+                <option value="@Model.ProtectValue((string)item.Id)">@item.Name</option>
+            }
+        </select>
+    </div>
+    <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3">Select</button>
+    </div>
+
+
+</form>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Property name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Properties)
+        {
+            <tr>
+                <th scope="row">
+                    <a asp-page="/Details"
+                        asp-route-propertyId="@Model.ProtectValue((string)item.Id)" 
+                        asp-route-organizationId="@Model.ProtectValue((string?)Model.SelectedOrganizationId)">Select</a>
+                </th>
+                <td>@item.Name</td>
+            </tr>
+        }
+    </tbody>
+</table>

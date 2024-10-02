@@ -1,0 +1,57 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35209.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ABDA2B40-48BD-4869-BD3F-764E0916328E}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{166330F0-C626-4772-8019-680D0EADBDDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfidentialServices", "src\ConfidentialServices\ConfidentialServices.csproj", "{0317F6A5-5932-4489-8E1C-0AB2A2ADAA95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfidentialServices.AutoMapper", "src\ConfidentialServices.AutoMapper\ConfidentialServices.AutoMapper.csproj", "{E380CB2F-6995-44C4-ACD6-5A1846360651}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfidentialServices.Swashbuckle", "src\ConfidentialServices.Swashbuckle\ConfidentialServices.Swashbuckle.csproj", "{1856DEC8-C1F8-4EC8-AEC7-0AF08B1747B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{F1B6B662-C19D-4819-AA42-65060CAA1E56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorSample", "samples\RazorSample\RazorSample.csproj", "{00BFE43C-E612-43D7-8FBF-4E01B83CDD56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0317F6A5-5932-4489-8E1C-0AB2A2ADAA95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0317F6A5-5932-4489-8E1C-0AB2A2ADAA95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0317F6A5-5932-4489-8E1C-0AB2A2ADAA95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0317F6A5-5932-4489-8E1C-0AB2A2ADAA95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E380CB2F-6995-44C4-ACD6-5A1846360651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E380CB2F-6995-44C4-ACD6-5A1846360651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E380CB2F-6995-44C4-ACD6-5A1846360651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E380CB2F-6995-44C4-ACD6-5A1846360651}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1856DEC8-C1F8-4EC8-AEC7-0AF08B1747B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1856DEC8-C1F8-4EC8-AEC7-0AF08B1747B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1856DEC8-C1F8-4EC8-AEC7-0AF08B1747B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1856DEC8-C1F8-4EC8-AEC7-0AF08B1747B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00BFE43C-E612-43D7-8FBF-4E01B83CDD56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00BFE43C-E612-43D7-8FBF-4E01B83CDD56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00BFE43C-E612-43D7-8FBF-4E01B83CDD56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00BFE43C-E612-43D7-8FBF-4E01B83CDD56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0317F6A5-5932-4489-8E1C-0AB2A2ADAA95} = {166330F0-C626-4772-8019-680D0EADBDDC}
+		{E380CB2F-6995-44C4-ACD6-5A1846360651} = {166330F0-C626-4772-8019-680D0EADBDDC}
+		{1856DEC8-C1F8-4EC8-AEC7-0AF08B1747B9} = {166330F0-C626-4772-8019-680D0EADBDDC}
+		{00BFE43C-E612-43D7-8FBF-4E01B83CDD56} = {F1B6B662-C19D-4819-AA42-65060CAA1E56}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86B05402-85D0-43FF-8A6F-8F77A4584234}
+	EndGlobalSection
+EndGlobal

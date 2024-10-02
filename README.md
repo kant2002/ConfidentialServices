@@ -13,3 +13,10 @@ And add this line to your Program.cs
 ```
 builder.Services.AddConfidentialServices();
 ```
+
+There optional support for AutoMapper and Swashbuckle
+```
+builder.Services.AddConfidentialServices()
+	.AddAutoMapper()
+	.AddSwashbuckle();
+```
